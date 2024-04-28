@@ -28,9 +28,14 @@ main {
         flex-grow: 0.3;
         padding: 0 35px;
 
+        img {
+            margin-bottom: 30px;
+        }
+
         h2 {
             font-size: 20px;
             font-weight: bold;
+            margin-bottom: 45px;
         }
 
          .btn-wrapper {
@@ -39,7 +44,27 @@ main {
             align-items: center;
             justify-content: center;
             width: 100%;
-            gap: 10px;
+            gap: 20px;
+
+            .divider {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+
+                font-size: 14px;
+                color: $gray-bg;
+                font-weight: 400;
+                text-transform: uppercase;
+
+                div {
+                    flex-grow: 1;
+                    height: 2px;
+                    background-color: $gray-bg;
+                }
+
+            }
 
             button {
                 width: 100%;
@@ -49,6 +74,7 @@ main {
                 border: none;
                 background-color: transparent;
                 padding: 12px 24px;
+                cursor: pointer;
     
                 &.btn-primary {
                     background-color: $primary-color;
